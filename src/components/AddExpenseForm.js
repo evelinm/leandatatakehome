@@ -66,7 +66,7 @@ function AddExpenseForm({addExpense, users}){
   return (
     <Form className="w-80 flex grid items-center justify-items-center place-content-center" onSubmit={handleSubmit}>
       <FormGroup>
-        <Label for="fullName">Full Name</Label>
+        <Label for="fullName"> Full Name </Label>
         <Input
           type="select"
           name="fullName"
@@ -86,7 +86,7 @@ function AddExpenseForm({addExpense, users}){
       </FormGroup>
 
       <FormGroup>
-        <Label for="category">Category</Label>
+        <Label for="category"> Category </Label>
         <Input
           type="select"
           name="category"
@@ -106,7 +106,7 @@ function AddExpenseForm({addExpense, users}){
       </FormGroup>
 
       <FormGroup>
-        <Label for="description">Description</Label>
+        <Label for="description"> Description </Label>
         <Input
           name="description"
           id="description"
@@ -116,7 +116,7 @@ function AddExpenseForm({addExpense, users}){
       </FormGroup>
 
       <FormGroup>
-        <Label for="cost">Cost</Label>
+        <Label for="cost"> Cost </Label>
         <Input
           name="cost"
           id="cost"

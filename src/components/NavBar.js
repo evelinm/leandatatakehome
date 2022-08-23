@@ -18,12 +18,12 @@ function NavBar() {
   const toggleExpense = () => setExpenseOpen(!dropdownExpenseOpen);
 
   return (
-    <div className="bg-[#22c55e] p-8">
+    <div className="bg-[#22c55e]  p-8">
       <Nav>
         <NavLink exact to="/" className="pr-4 text-2xl no-underline">
           Lean Data
         </NavLink>
-        <NavItem>
+        <NavItem className="bg-[#0c4a6e]">
           <Dropdown>
             <ButtonDropdown isOpen={dropdownUserOpen} toggle={toggleUser}>
               <DropdownToggle caret outline color="info">
@@ -49,7 +49,7 @@ function NavBar() {
             </ButtonDropdown>
           </Dropdown>
         </NavItem>
-        <NavItem>
+        <NavItem className="bg-[#0c4a6e] mx-8 ">
         <Dropdown>
             <ButtonDropdown isOpen={dropdownExpenseOpen} toggle={toggleExpense}>
               <DropdownToggle caret outline color="info">
