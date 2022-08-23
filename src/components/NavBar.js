@@ -20,7 +20,7 @@ function NavBar() {
   return (
     <div className="bg-[#22c55e] p-8">
       <Nav>
-        <NavLink exact to="/" className="pr-4 text-2xl">
+        <NavLink exact to="/" className="pr-4 text-2xl no-underline">
           Lean Data
         </NavLink>
         <NavItem>

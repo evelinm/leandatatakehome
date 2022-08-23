@@ -84,7 +84,7 @@ function App() {
     setCompanyExpenseTable(generateCompanyExpensesTable({expenses}));
   }
 
-  //add expense logic
+
   async function addExpense(formData) {
     let expenses = [...expensesTable.expenses, {...formData}];
     setExpensesTable({expenses});
@@ -102,7 +102,7 @@ function App() {
     setCompanyExpenseTable(generateCompanyExpensesTable({expenses}));
   }
 
-  //edit expense logic
+
   async function editExpense(formData) {
     let expenses = [...expensesTable.expenses];
     const oldCost = expenses[formData.expenseIdx].cost;
@@ -114,7 +114,7 @@ function App() {
     };
     setExpensesTable({expenses});
 
-    console.log(oldCost);
+
     let users = [...usersTable.users];
     const [firstName, lastName] = formData.fullName.split(" ");
     const cost = formData.cost;
@@ -126,7 +126,7 @@ function App() {
     setCompanyExpenseTable(generateCompanyExpensesTable({expenses}));
   }
 
-  //delete expense logic
+
   async function deleteExpense(formData) {
     const expenseIdx = formData.expenseIdx;
     let expenses = [...expensesTable.expenses];

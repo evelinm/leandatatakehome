@@ -64,7 +64,7 @@ function AddExpenseForm({addExpense, users}){
   };
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form className="w-80 flex grid items-center justify-items-center place-content-center" onSubmit={handleSubmit}>
       <FormGroup>
         <Label for="fullName">Full Name</Label>
         <Input

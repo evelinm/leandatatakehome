@@ -52,7 +52,7 @@ function AddUserForm({addUser}){
   };
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form className="w-80 flex grid items-center justify-items-center place-content-center" onSubmit={handleSubmit}>
       <FormGroup>
         <Label for="firstName">First Name</Label>
         <Input
@@ -66,13 +66,13 @@ function AddUserForm({addUser}){
         />
         {showErrorText && (
           <p role="alert" style={{ color: "rgb(255, 0, 0)" }}>
-            Only letters allowed in first and last names
+            Please only use letters no special characters
           </p>
         )}
       </FormGroup>
 
       <FormGroup>
-        <Label for="lastName">Last Name</Label>
+        <Label for="lastName"> Last Name </Label>
         <Input
           name="lastName"
           id="lastName"
@@ -84,12 +84,12 @@ function AddUserForm({addUser}){
         />
         {showErrorText && (
           <p role="alert" style={{ color: "rgb(255, 0, 0)" }}>
-            Only letters allowed in first and last names
+          Please only use letters no special characters
           </p>
         )}
       </FormGroup>
 
-      <Button>
+      <Button className="p-2 ">
         Add User
       </Button>
     </Form>
