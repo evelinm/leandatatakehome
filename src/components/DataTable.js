@@ -1,9 +1,11 @@
 import React from "react";
+import { Table } from "reactstrap";
 
 function DataTable({table}){
+
   if(Object.keys(table).length<1){
     return (
-      <table className="table-auto">
+      <Table>
         <thead>
           <tr>
           </tr>
@@ -12,7 +14,7 @@ function DataTable({table}){
           <tr>
           </tr>
         </tbody>
-      </table>
+      </Table>
     )
   }
 
@@ -21,7 +23,7 @@ function DataTable({table}){
   const columnNames = rows[0] ? Object.keys(rows[0]) : [];
 
   return (
-      <table className="border-separate border-spacing-2 border border-slate-500 mx-8 ">
+      <Table className=" border-separate border-spacing-2 border border-slate-500 mx-8 ">
         <thead>
           <tr>
             {
@@ -48,7 +50,7 @@ function DataTable({table}){
             ))
           }
         </tbody>
-      </table>
+      </Table>
   )
 }
 
