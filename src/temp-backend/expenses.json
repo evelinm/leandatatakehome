@@ -1,0 +1,41 @@
+{
+    "expenses":
+    [
+      {
+        "fullName": "Evelin Murillo",
+        "category": "food",
+        "description": "burrito",
+        "cost": 100
+      },
+      {
+        "fullName": "Leo Munoz",
+        "category": "food",
+        "description": "menudo",
+        "cost": 1000
+      },
+      {
+        "fullName": "Evelin Murillo",
+        "category": "supplies",
+        "description": "desktop",
+        "cost": 1500
+      },
+      {
+        "fullName": "Leo Munoz",
+        "category": "supplies",
+        "description": "books",
+        "cost": 400
+      },
+      {
+        "fullName": "Evelin Murillo",
+        "category": "travel",
+        "description": "visit family in mexico",
+        "cost": 500
+      },
+      {
+        "fullName": "Leo Munos",
+        "category": "travel",
+        "description": "humbolt county",
+        "cost": 100
+      }
+    ]
+  }
